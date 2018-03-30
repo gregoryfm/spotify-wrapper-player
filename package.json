@@ -9,7 +9,7 @@
     "test": "./node_modules/.bin/mocha tests/**/*.spec.js --bail --require babel-register",
     "test:tdd": "npm test -- --watch",
     "test:coverage": "nyc npm test",
-    "start": "./node_modules/.bin/webpack-dev-server"
+    "start": "./node_modules/.bin/webpack-dev-server --open"
   },
   "nyc": {
     "function": 80,
@@ -39,6 +39,7 @@
   },
   "homepage": "https://github.com/gregoryfm/spotify-wrapper-player#readme",
   "dependencies": {
+    "gfm-spotify-wrapper": "^1.0.3",
     "gitignore": "^0.6.0"
   },
   "devDependencies": {
@@ -52,6 +53,8 @@
     "eslint-plugin-jsx-a11y": "^6.0.3",
     "eslint-plugin-react": "^7.6.1",
     "husky": "^0.14.3",
+    "jsdom": "^11.6.2",
+    "jsdom-global": "^3.0.2",
     "mocha": "^5.0.0",
     "nyc": "^11.4.1",
     "webpack": "^4.1.1",
