@@ -32,19 +32,19 @@ describe('AlbumTracks', () => {
   ];
 
   const markup = `
-    <div class="music">
+    <div class="music" data-track-preview="${data[0].preview_url}">
       <p class="music-number">${data[0].track_number}</p>
       <p class="music-title">${data[0].name}</p>
       <p class="music-duration">${data[0].duration_ms}</p>
     </div>`;
 
   const markup2 = `
-    <div class="music">
+    <div class="music" data-track-preview="${data[0].preview_url}">
       <p class="music-number">${data[0].track_number}</p>
       <p class="music-title">${data[0].name}</p>
       <p class="music-duration">${data[0].duration_ms}</p>
     </div>
-    <div class="music">
+    <div class="music" data-track-preview="${data[0].preview_url}">
       <p class="music-number">${data[0].track_number}</p>
       <p class="music-title">${data[0].name}</p>
       <p class="music-duration">${data[0].duration_ms}</p>
