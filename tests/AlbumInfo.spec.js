@@ -43,9 +43,14 @@ describe('AlbumInfo', () => {
   `;
 
   it('should create and append the markup given a correct data', () => {
-    const element = document.createElement('div');
-    renderAlbumInfo(data, element);
+    const element = document.createElement( 'div' );
+    renderAlbumInfo( data, element );
 
-    expect(element.innerHTML).to.be.eql(markup);
+    expect( element.innerHTML ).to.be.eql( markup );
+  });
+
+  it('should return the data', () => {
+    const element2 = document.createElement( 'div' );
+    expect( renderAlbumInfo( data, element2 ) ).to.be.eql( data );
   });
 });
