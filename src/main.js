@@ -6,7 +6,7 @@ import renderAlbumTracks from './AlbumTracks';
 const albums = spotify.search.albums('Incubus');
 const albumList = document.getElementById('album-list');
 
-const album = spotify.album.getAlbum('6peEdPVO73WtgGah5sEhX4');
+const album = spotify.album.getAlbum('2i6nd4FV6y7K9fln6eelmR');
 const albumInfo = document.getElementById('album-info');
 const albumTracks = document.getElementById('album-musics');
 

@@ -1,7 +1,7 @@
 import SpotifyWrapper from 'gfm-spotify-wrapper';
 
 const spotify = new SpotifyWrapper({
-  apiToken: 'BQDy5QoN1kFgU9Y244zqn6OyigaEuiuMTNvNR5Ich-U9o3kvdHGo54MacABmy41avtCq7QlxGYG4_idpJPccfuHJV4UPkqIsGTZSE5a3luQjofnWzpozUiJ4NZvvJ67oYfHiOizZcPNgug',
+  apiToken: 'BQB8Rz8Gp9n3J9YP-Y0YwtDjeDH0MHCBcV0UY__0L_GUhw4Nbu5IK0yduvTYOZixCwZF-Zn7b5usjvj15b1EAT7OK8eSTefIkTyvh0S10iOvMc-gQs4F_18ljLITLjeDZ7qbjU7R4iDjUQ',
 });
 
 export default spotify;
