@@ -11,8 +11,7 @@ export default function searchEnterTrigger() {
   searchForm.addEventListener('submit', event => {
     event.preventDefault();
 
-    console.log(searchInput.value);
     spotify.search.albums( searchInput.value )
       .then(data => renderAlbums(data.albums.items, albumList));
-  })
+  });
 }
