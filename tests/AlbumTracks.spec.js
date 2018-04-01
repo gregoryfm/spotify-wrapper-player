@@ -1,6 +1,7 @@
 import 'jsdom-global/register';
 import { expect } from 'chai';
 import renderAlbumTracks from '../src/AlbumTracks';
+import convertToHumanTime from '../src/ConvertToHumanTime';
 
 describe('AlbumTracks', () => {
   it('should exist', () => {
@@ -35,19 +36,19 @@ describe('AlbumTracks', () => {
     <div class="music" data-track-preview="${data[0].preview_url}">
       <p class="music-number">${data[0].track_number}</p>
       <p class="music-title">${data[0].name}</p>
-      <p class="music-duration">${data[0].duration_ms}</p>
+      <p class="music-duration">${convertToHumanTime( 238733 )}</p>
     </div>`;
 
   const markup2 = `
     <div class="music" data-track-preview="${data[0].preview_url}">
       <p class="music-number">${data[0].track_number}</p>
       <p class="music-title">${data[0].name}</p>
-      <p class="music-duration">${data[0].duration_ms}</p>
+      <p class="music-duration">${convertToHumanTime( 238733 )}</p>
     </div>
     <div class="music" data-track-preview="${data[0].preview_url}">
       <p class="music-number">${data[0].track_number}</p>
       <p class="music-title">${data[0].name}</p>
-      <p class="music-duration">${data[0].duration_ms}</p>
+      <p class="music-duration">${convertToHumanTime( 238733 )}</p>
     </div>`;
 
   it('should create and append the markup given a correct data', () => {
